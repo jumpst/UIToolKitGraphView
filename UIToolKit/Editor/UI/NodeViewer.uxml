@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolKit/Editor/UI/NodeViewerStyle.uss?fileID=7433441132597879392&amp;guid=8c114372dd1eda848938be40700d83a6&amp;type=3#NodeViewerStyle" />
+    <ui:VisualElement name="node-border" style="background-color: rgba(164, 243, 139, 255);">
+        <ui:VisualElement name="title">
+            <ui:Label name="title-label" text="多节点" class="unity-text-element unity-label" />
+            <ui:VisualElement name="title-button-container">
+                <ui:VisualElement name="collapse-button">
+                    <ui:VisualElement name="icon" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="contents" style="flex-direction: row;">
+            <ui:VisualElement name="divider" class="horizontal" />
+            <ui:VisualElement name="top" style="flex-direction: row;">
+                <ui:VisualElement name="input" style="flex-direction: row;" />
+                <ui:VisualElement name="divider" class="vertical" style="flex-direction: row;" />
+                <ui:VisualElement name="output" style="flex-grow: 0.5; flex-direction: row;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" style="flex-direction: row; flex-grow: 1;" />
+</ui:UXML>
